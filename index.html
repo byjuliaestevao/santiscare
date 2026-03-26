@@ -20,36 +20,37 @@
     <header>
 
         <!-- Logo -->
-        <div>
-            <a href="http://santiscare.com">
+        <div class="header-logo">
+            <a href="#home">
                 Logo
             </a>
         </div>
 
         <!-- Menu Desktop / PC -->
-        <nav>
-            <ul>
+        <nav class="menu-desktop">
+            <ul class="menu">
                 <li>
-                    <a href="">
-                        <span> Home </span>
+                    <!-- Cria Links -->
+                    <a href="#home" class="menu-link active">
+                        <span class="menu-texto"> Home </span>
                     </a>
                 </li>
 
                 <li>
-                    <a href="">
-                        <span> Produtos </span>
+                    <a href="#produtos" class="menu-link">
+                        <span class="menu-texto"> Produtos </span>
                     </a>
                 </li>
 
                 <li>
-                    <a href="">
-                        <span> Sobre </span>
+                    <a href="#sobre" class="menu-link">
+                        <span class="menu-texto"> Sobre </span>
                     </a>
                 </li>
 
                 <li>
-                    <a href="">
-                        <span> Contato </span>
+                    <a href="#contato" class="menu-link">
+                        <span class="menu-texto"> Contato </span>
                     </a>
                 </li>
 
@@ -60,12 +61,13 @@
         <!-- Tema Desktop -->
 
         <!-- Icone Trocar Cor Tema -->
+        <div class="header-toggle">
 
-        <div>
+          <!-- Icone Sol ou Lua -->
+          <i class="bi bi-sun" id="toggleTheme"> </i>
 
-          <i class="bi bi-sun"></i>
           <!-- Botão Hamburguer -->
-           <button>
+           <button class="btn-menu-mobile" id="menuHamburger">
             <i class="bi bi-list-ul"></i>
            </button>
 
