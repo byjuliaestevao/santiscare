@@ -1,81 +1,80 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>santiscare</title>
-    <!-- Bootstrap Icons  -->
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-
-     <!-- CSS -->
-      <link rel="stylesheet" href="css/estilo.css">
-     
+    <title>Santis Care | Premium Skincare Experience</title>
+    <!-- Favicon would go here -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
-    <!-- ALT + SHIFT + A -->
 
-    <!-- Cabeçalho -->
     <header>
-
-        <!-- Logo -->
+        <div class="header-left">
+            <div class="socials">
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="#"><i class="fab fa-pinterest"></i> Pinterest</a>
+            </div>
+        </div>
+        
         <div class="header-logo">
-
-            <a href="#home">
-               <img src="img/img SC.png" alt="" class="logo"> 
-
-            </a>
+            <a href="#">Santis Care</a>
         </div>
-
-        <!-- Menu Desktop / PC -->
-        <nav class="menu-desktop">
-            <ul class="menu">
-                <li>
-                    <!-- Cria Links -->
-                    <a href="#home" class="menu-link active">
-                        <span class="menu-texto"> Home </span>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#produtos" class="menu-link">
-                        <span class="menu-texto"> Produtos </span>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#sobre" class="menu-link">
-                        <span class="menu-texto"> Sobre </span>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#contato" class="menu-link">
-                        <span class="menu-texto"> Contato </span>
-                    </a>
-                </li>
-
-
-            </ul>
-        </nav>
-
-        <!-- Tema Desktop -->
-
-        <!-- Icone Trocar Cor Tema -->
-        <div class="header-toggle">
-
-          <!-- Icone Sol ou Lua -->
-          <i class="bi bi-sun" id="toggleTheme"> </i>
-
-          <!-- Botão Hamburguer -->
-           <button class="btn-menu-mobile" id="menuHamburger">
-            <i class="bi bi-list-ul"></i>
-           </button>
-
+        
+        <div class="header-right">
+            <div class="search-container">
+                <input type="text" placeholder="Search">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="nav-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+            </div>
         </div>
-
     </header>
-</body>
 
+    <nav class="fullscreen-menu" id="fullMenu">
+        <div class="close-btn" id="closeMenu">&times;</div>
+        <ul class="menu-items">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Produtos</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main class="hero-section">
+        <!-- Coluna Esquerda -->
+        <section class="col col-left">
+            <div class="img-wrapper">
+                <img src="C:\Users\Alunas\.gemini\antigravity\brain\bfa441e0-e559-4013-bd10-8e7289241db6\skincare_product_1_1776881606772.png" id="imgLeft" alt="Skincare Product">
+            </div>
+            <button class="nav-arrow arrow-left" id="prevBtn">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+        </section>
+
+        <!-- Coluna Central -->
+        <section class="col col-center">
+            <div class="logo-center">Santis Care</div>
+            <h1 class="title-center">Glowing Skin <br> Starts Here</h1>
+            <p class="desc-center">Discover the perfect balance between nature and science. Our premium formulas are crafted for the modern individual who values authentic radiance.</p>
+            <button class="btn-primary">Ver Produtos</button>
+        </section>
+
+        <!-- Coluna Direita -->
+        <section class="col col-right">
+            <div class="img-wrapper">
+                <img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?q=80&w=1000&auto=format&fit=crop" id="imgRight" alt="Skincare Ritual">
+            </div>
+            <button class="nav-arrow arrow-right" id="nextBtn">
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
 </html>
